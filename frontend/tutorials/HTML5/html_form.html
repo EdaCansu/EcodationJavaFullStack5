@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <h1 align="center">Register</h1>
+    <form action="#" method="POST">
+        <table width="50%" border="0" cellpadding="7" id="register" name="register">
+            <tbody>
+                <tr>
+                    <td><i class="fa-solid fa-image-portrait" title="Adınız">: </i></td>
+                    <td><input type="text" id="name" name="name" placeholder="Adınızı Giriniz" autofocus required ></td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-image-portrait" title="Soyadınız">: </i></td>
+                    <td><input type="text" id="surname" name="surname" placeholder="Soyadınızı Giriniz" required></td>
+                </tr>
+                
+                <tr>
+                    <td><i class="fa-solid fa-cake-candles" title="email">: </i></td>
+                    <td><input type="email" id="email" name="email" placeholder="Emailinizi Giriniz" required></td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-key" title="password">: </i></td>
+                    <td><input type="password" id="password" name="password" placeholder="Şifrenizi Giriniz" required></td>
+                </tr>
+
+                <tr>
+                    <td><i class="fa-solid fa-cake-candles" title="Doğum günü"></i></td>
+                    <td><input type="date" name="birthday" id="birthday"></td>
+                </tr>
+                
+                <tr>
+                    <td><i class="fa-solid fa-venus-mars" title="Cinsiyet"></i></td>
+                    <td><input type="radio" name="gender" id="gender">Kadın
+                    <input type="radio" name="gender" id="gender">Erkek</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-pen" title="Yetenekler"></i></td>
+                    <td><input type="checkbox" name="js" id="js">Js
+                    <input type="checkbox" name="java" id="java">Java
+                    <input type="checkbox" name="css" id="css">Css</td>
+                </tr>
+
+                <tr>
+                    <td><i class="fa-solid fa-location-pin"></i></td>
+                    <td>
+                        <select name="country" id="country">
+                            <option value="0">Ülke Seçiniz</option>
+                            <option value="chf">İsviçre</option>
+                            <option value="gr">Almanya</option>
+                            <option value="fr">Fransa</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input type="reset" value="Temizle" style="background-color: red; color: white; border-color: white;"></td>
+                    <td><input type="submit" value="Gönder" style="background-color: green; color: white; border-color: white; "></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+
+</body>
+
+</html>

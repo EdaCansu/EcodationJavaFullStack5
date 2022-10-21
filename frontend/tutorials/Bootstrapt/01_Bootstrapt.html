@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            padding: 1rem;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <br><br><br><br><br>
+
+<hr><br><br>
+    <p class="text-secondary text-uppercase text-center" style="font-size: 3rem">Form</p>
+
+    <form action="#" method="post">
+        <div class="container border p-5 shadow-lg d-grid gap-4">
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-1"><label for="name" class="text-capitalize"></label><i class="fa-solid fa-user"></i></div>
+                    <div class="col-11"><input type="text" class="text-control" required autofocus id="name" placeholder="Adınız"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-1"><label for="surname" class="text-capitalize"><i class="fa-regular fa-user"></i></label></div>
+                    <div class="col-11"><input type="text" class="text-control" required id="surname" placeholder="Soyadınız"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-1"><label for="email" class="text-capitalize"><i class="fa-regular fa-user"></i></label></div>
+                    <div class="col-11"><input type="email" class="text-control" required id="email" placeholder="E-mail Adresiniz"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-1"><label for="password" class="text-capitalize"><i class="fa-regular fa-user"></i></label></div>
+                    <div class="col-11"><input type="password" class="text-control" required id="password" placeholder="Şifreniz"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-1"><i class="fa-regular fa-user"></i></div>
+                    <div class="col text-center">
+                        <button type="reset" class="btn btn-outline-danger">Temizle</button>
+                        <button type="submit" class="btn btn-primary">Gönder</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+    <hr><br><br>
+    <p class="text-secondary text-uppercase text-center" style="font-size: 3rem">table</p>
+
+    <!-- table>thead>tr>th{item $}*3^^tbody>tr>td{item $}*3^^tfoot>tr>th{ütün haklar saklıdır} -->
+    <table class="table table-hover table-striped table-responsive table-dark">
+        <thead>
+            <tr>
+                <th>item 1</th>
+                <th>item 2</th>
+                <th>item 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>item 1</td>
+                <td>item 2</td>
+                <td>item 3</td>
+            </tr>
+            <tr>
+                <td>item 1</td>
+                <td>item 2</td>
+                <td>item 3</td>
+            </tr>
+            <tr>
+                <td>item 1</td>
+                <td>item 2</td>
+                <td>item 3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th class="text-center pt-3 pb-3" colspan="3">Bütün haklar saklıdır</th>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <hr><br><br>
+    <p class="text-secondary text-uppercase text-center" style="font-size: 3rem">Alert</p>
+
+
+    <div class="alert alert-warning">
+        <strong>is valid username</strong>
+    </div>
+
+    <div class="alert alert-danger alert-dismissible show fade">
+        <button class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>is valid username</strong>
+    </div>
+
+    <!-- data-bs-dismiss ile butonu kapanır yaptık -->
+
+    <hr><br><br>
+    <p class="text-secondary text-uppercase text-center" style="font-size: 3rem">breadcrump</p>
+    <nav>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item">item 1</li>
+            <li class="breadcrumb-item">item 2</li>
+            <li class="breadcrumb-item">item 3</li>
+            <li class="breadcrumb-item">item 4</li>
+            <li class="breadcrumb-item disabled">item 5</li>
+        </ul>
+    </nav>
+
+    <hr><br><br>
+    <p class="text-secondary text-uppercase text-center" style="font-size: 3rem">list</p>
+    <!-- ul.list-group-mb-3.d-grid.gap-2>li.list-group-item{item $}*5 -->
+
+    <ul class="list-group mb-3 d-grid gap-2">
+        <li class="list-group-item">item 1</li>
+        <li class="list-group-item">item 2</li>
+        <li class="list-group-item">item 3</li>
+        <li class="list-group-item">item 4</li>
+        <li class="list-group-item disabled">item 5</li>
+    </ul>
+    <hr><br><br>
+
+
+
+
+    <!-- img-fluid güzel yapıymış -->
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
