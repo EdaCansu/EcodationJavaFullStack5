@@ -23,7 +23,7 @@ project version: V.1
 }
 
 html {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 body {
@@ -56,6 +56,11 @@ ul {
 p {
     text-align: center;
     margin: 0.3rem 0.8rem;
+    text-align: justify;
+}
+
+i {
+    font-size: 2rem;
 }
 
 /*########################################*/
@@ -84,7 +89,10 @@ p {
     /* opacity: 0.9; */
     opacity: .8;
     box-shadow: 1px 1px 3px 1px rgba(255, 255, 255, .7);
+}
 
+#dropdownId {
+    margin-top: -3rem;
 }
 
 /*########################################*/
@@ -92,4 +100,5 @@ p {
 .dark_mode {
     background-color: #000000;
     color: azure;
+    margin-left: .6rem;
 }
