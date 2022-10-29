@@ -5,3 +5,9 @@ $(function () {
         source: searchData
     })
 })
+
+// dark light button
+let darkLight = () => {
+    //alert("dark light")
+    document.body.classList.toggle("dark_mode");
+}

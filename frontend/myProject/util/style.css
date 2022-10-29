@@ -86,3 +86,10 @@ p {
     box-shadow: 1px 1px 3px 1px rgba(255, 255, 255, .7);
 
 }
+
+/*########################################*/
+/*dark-light */
+.dark_mode {
+    background-color: #000000;
+    color: azure;
+}
