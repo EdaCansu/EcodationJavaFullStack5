@@ -2,7 +2,7 @@ package com.edacansu.javase;
 
 import java.util.Scanner;
 
-public class _05_String {
+public class _06_Scanner2 {
     public static void main(String[] args) {
         Scanner klavye = new Scanner(System.in);
         System.out.println("Lütfen bir şeyler yazınız: ");
