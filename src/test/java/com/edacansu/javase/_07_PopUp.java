@@ -1,7 +1,7 @@
 package com.edacansu.javase;
 
 import javax.swing.*;
-import java.util.Scanner;
+
 
 public class _07_PopUp {
     public static void main(String[] args) {
