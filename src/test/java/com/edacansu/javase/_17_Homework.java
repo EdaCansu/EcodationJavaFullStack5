@@ -88,7 +88,7 @@ public class _17_Homework {
         // Bu sayılar içinde tek sayı toplamı
         // Bu sayılar içinde tek sayı adeti
 
-        int sum = 0, oddCounter = 0, oddSum = 0;
+        /*int sum = 0, oddCounter = 0, oddSum = 0;
         String numberAll = "", oddNumber = "";
         Random number = new Random();
 
@@ -106,7 +106,7 @@ public class _17_Homework {
                 "\nSum => " + sum +
                 "\nThe number of odd number => " + oddCounter +
                 "\nOdd Numbers => " + oddNumber +
-                "\nOdd Sum => " + oddSum);
+                "\nOdd Sum => " + oddSum);*/
 
         // Vize Final Ödevi
         // kullanıcıdan alınan vize ve final notuna göre geçme(ortalama) Algoritması
@@ -124,5 +124,38 @@ public class _17_Homework {
         // while sonsuz döngü   ==> while(true) {}
         // for sonsuz döngü     ==> for(;;) {}
 
+        int midtermMark, finalMark, gpa;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Please enter your midterm mark: ");
+        midtermMark = input.nextInt();
+        System.out.print("Please enter your final mark: ");
+        finalMark = input.nextInt();
+
+        if(midtermMark ==  0 || finalMark == 0){
+            System.out.println("Zero score is an infraction of the rules. Exiting the system!");
+        } else {
+            while(true) {
+                gpa = (((midtermMark * 40)/ 100) + ((finalMark * 60)/ 100));
+                if (gpa < 50){
+                    System.out.println("Your letter score is FF - Fail the clas :(");
+                } else if(gpa < 55){
+                    System.out.println("Pass the class");
+                } else if(gpa < 70){
+                    System.out.println("Your letter score is BB.");
+                } else if(gpa < 85) {
+                    System.out.println("Your letter score is BA.");
+                } else {
+                    System.out.println("Your letter score is AA.");
+                }
+                System.out.print("Please enter your midterm mark: ");
+                midtermMark = input.nextInt();
+                System.out.print("Please enter your final mark: ");
+                finalMark = input.nextInt();
+
+            }
+
+        }
+
     }
 }
+
