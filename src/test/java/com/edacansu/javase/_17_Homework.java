@@ -1,6 +1,7 @@
 package com.edacansu.javase;
 
 
+import java.util.Date;
 import java.util.Scanner;
 
 public class _17_Homework {
@@ -14,9 +15,8 @@ public class _17_Homework {
         // Soför kaç kere trafik cezası yediğini ve toplam para cezasını
         // ve eğer toplam ceza sayısı 5 ve üstüne ise ehliyetine el konulsun  hesaplayan algoritma yazalım ?
 
-        int speed, counter = 0, sum = 0;
+       /* int speed, counter = 0, sum = 0;
         Scanner inp = new Scanner(System.in);
-
             while (counter < 5) {
                 System.out.print("\nPlease enter your speed: ");
                 speed = inp.nextInt();
@@ -45,17 +45,58 @@ public class _17_Homework {
 
         if (counter == 5) {
             System.out.print("\nYour license has been seized! Please contact with the X.");
-        }
-
-
+        }*/
 
 
         // Kullanıcı tarafından girilen haftanın gününü bulan algoritma
+        int day;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Please enter the day: ");
+        day = input.nextInt();
+
+        Integer gun = day > 7 ? day = day % 7 : day;
+            switch (day) {
+                case 1:
+                    System.out.println("It is monday!");
+                    break;
+                case 2:
+                    System.out.println("It is tuesday!");
+                    break;
+                case 3:
+                    System.out.println("It is wednesday!");
+                    break;
+                case 4:
+                    System.out.println("It is thursday!");
+                    break;
+                case 5:
+                    System.out.println("It is friday!");
+                    break;
+                case 6:
+                    System.out.println("It is saturday!");
+                    break;
+                case 7:
+                    System.out.println("It is sunday!");
+                    break;
+                default:
+                    System.out.println("Wrong data! Please try again.");
+            }
+
+
 
         // Örnek: 1-10 arasında 5 tane random sayı üretelim ?
         // Bu sayıları toplayalım
         // Bu sayılar içinde tek sayı toplamı
         // Bu sayılar içinde tek sayı adeti
+
+
+        // Kullanıcı tarafından alınan bir sayıya göre ceza kesilecektir.
+        // Hızı:1-79 kadar ise para cezası  : 0 TL      ==>  1<=speed<=79
+        // Hızı:80-4 ise para cezası : 800 TL hızlısınız   ==>  80<=speed<=94
+        // Hızı:95-119 ise para cezası : 1200 TL çok hızlısınız   ==>  95<=speed<=119
+        // Hızı:120 ve yukarı ise para cezası: 2000 TL  tehlikeli hızlısınız ==>  speed>=120
+        // Soför kaç kere trafik cezası yediğini ve toplam para cezasını
+        // ve eğer toplam ceza sayısı 5 ve üstüne ise ehliyetine el konulsun  hesaplayan algoritma yazalım ?
+
 
         // Vize Final Ödevi
         // kullanıcıdan alınan vize ve final notuna göre geçme(ortalama) Algoritması
