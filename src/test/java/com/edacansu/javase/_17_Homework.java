@@ -2,6 +2,7 @@ package com.edacansu.javase;
 
 
 import java.util.Date;
+import java.util.Random;
 import java.util.Scanner;
 
 public class _17_Homework {
@@ -49,7 +50,7 @@ public class _17_Homework {
 
 
         // Kullanıcı tarafından girilen haftanın gününü bulan algoritma
-        int day;
+        /*int day;
         Scanner input = new Scanner(System.in);
         System.out.print("Please enter the day: ");
         day = input.nextInt();
@@ -79,8 +80,7 @@ public class _17_Homework {
                     break;
                 default:
                     System.out.println("Wrong data! Please try again.");
-            }
-
+            }*/
 
 
         // Örnek: 1-10 arasında 5 tane random sayı üretelim ?
@@ -88,15 +88,25 @@ public class _17_Homework {
         // Bu sayılar içinde tek sayı toplamı
         // Bu sayılar içinde tek sayı adeti
 
+        int sum = 0, oddCounter = 0, oddSum = 0;
+        String numberAll = "", oddNumber = "";
+        Random number = new Random();
 
-        // Kullanıcı tarafından alınan bir sayıya göre ceza kesilecektir.
-        // Hızı:1-79 kadar ise para cezası  : 0 TL      ==>  1<=speed<=79
-        // Hızı:80-4 ise para cezası : 800 TL hızlısınız   ==>  80<=speed<=94
-        // Hızı:95-119 ise para cezası : 1200 TL çok hızlısınız   ==>  95<=speed<=119
-        // Hızı:120 ve yukarı ise para cezası: 2000 TL  tehlikeli hızlısınız ==>  speed>=120
-        // Soför kaç kere trafik cezası yediğini ve toplam para cezasını
-        // ve eğer toplam ceza sayısı 5 ve üstüne ise ehliyetine el konulsun  hesaplayan algoritma yazalım ?
-
+        for (int i = 1; i <= 5; i++) {
+            int randomNumber = number.nextInt(10) + 1;
+            sum += randomNumber;
+            numberAll += randomNumber + " ";
+            if (randomNumber % 2 == 1) {
+                oddSum += randomNumber;
+                oddCounter++;
+                oddNumber += randomNumber + " ";
+            }
+        }
+        System.out.print("Numbers => " + numberAll +
+                "\nSum => " + sum +
+                "\nThe number of odd number => " + oddCounter +
+                "\nOdd Numbers => " + oddNumber +
+                "\nOdd Sum => " + oddSum);
 
         // Vize Final Ödevi
         // kullanıcıdan alınan vize ve final notuna göre geçme(ortalama) Algoritması
