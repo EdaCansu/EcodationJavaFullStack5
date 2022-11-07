@@ -17,5 +17,6 @@ public class _15_isDigit {
             System.out.println("Bu bir özel karakterdir.");
         }
 
+
     }
 }
