@@ -11,6 +11,9 @@ public class _22_Mathods {
         System.out.println("Parametreli void " + adi + " sayı " + sayi);
     }
 
+    public static void voidParametreli(String adi){
+        System.out.println("Parametreli void " + adi + "----Overloading example");
+    }
     public static void main(String[] args) {
 
         //AP =  Aynı Paket    FP = Farklı Paket
@@ -25,6 +28,7 @@ public class _22_Mathods {
 
         voidParametresiz();
         voidParametreli("Eda", 29);
+        voidParametreli("Edoş");
 
     }
 }
