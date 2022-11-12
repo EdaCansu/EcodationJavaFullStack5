@@ -1,5 +1,7 @@
 package com.edacansu.javase;
 
+import java.util.Scanner;
+
 public class _24_Faktoriyel {
 
     public static int facto(int data) {
@@ -19,8 +21,12 @@ public class _24_Faktoriyel {
 
     public static void main(String[] args) {
 
-        System.out.println("Sonuç: " + facto(5));
-        System.out.println("Sonuç: " + fac(5));
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Lütfen sayı giriniz: ");
+        int n = inp.nextInt();
+
+        System.out.println("Sonuç: " + facto(n));
+        System.out.println("Sonuç: " + fac(n));
 
     }
 }
