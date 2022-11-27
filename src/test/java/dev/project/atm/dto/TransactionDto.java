@@ -1,9 +1,10 @@
 package dev.project.atm.dto;
 
+import dev.project.atm.util.BaseField;
 import lombok.Data;
 
 @Data
-public class TransactionDto extends BaseField{
+public class TransactionDto extends BaseField {
 
     //Field
     private String transactionName;
@@ -26,16 +27,17 @@ public class TransactionDto extends BaseField{
     }
 
     //toString
-
     @Override
     public String toString() {
-        return "transactionDto{" +
+        return "TransactionDto{" +
                 "transactionName='" + transactionName + '\'' +
                 ", transactionAmount='" + transactionAmount + '\'' +
-                '}' + super.toString();
+                ", id=" + id +
+                ", date='" + date + '\'' +
+                "} " + super.toString();
     }
 
-
+    //my special diffent codes
     public void specialCode(){
         System.out.println(new TransactionDto().hashCode());
     }

@@ -1,6 +1,7 @@
 package dev.project.atm.dto;
 
 
+import dev.project.atm.util.BaseField;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -17,4 +18,33 @@ public class RegisterDto extends BaseField {
     private String password;
     private String telephoneNumber;
     private String emailAddress;
+
+    //parametreli constructor
+    public RegisterDto() {
+
+    }
+
+    //paametresiz constructor
+    public RegisterDto(Long id, String username, String password, String telephoneNumber, String emailAddress) {
+        super(id);
+        this.username = username;
+        this.password = password;
+        this.telephoneNumber = telephoneNumber;
+        this.emailAddress = emailAddress;
+    }
+
+    //toString
+
+    @Override
+    public String toString() {
+        return "RegisterDto{" +
+                "username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", telephoneNumber='" + telephoneNumber + '\'' +
+                ", emailAddress='" + emailAddress + '\'' +
+                ", id=" + id +
+                ", date='" + date + '\'' +
+                "} " + super.toString();
+    }
+
 }

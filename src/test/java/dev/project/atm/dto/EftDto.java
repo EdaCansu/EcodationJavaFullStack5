@@ -1,9 +1,10 @@
 package dev.project.atm.dto;
 
+import dev.project.atm.util.BaseField;
 import lombok.Data;
 
 @Data
-public class EftDto extends BaseField{
+public class EftDto extends BaseField {
 
     //Field
     private String eftName;
@@ -32,7 +33,9 @@ public class EftDto extends BaseField{
         return "EftDto{" +
                 "eftName='" + eftName + '\'' +
                 ", eftAmount='" + eftAmount + '\'' +
-                '}' + super.toString();
+                ", id=" + id +
+                ", date='" + date + '\'' +
+                "} " + super.toString();
     }
 
 
