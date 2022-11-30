@@ -4,6 +4,8 @@ package com.edacansu.business.dto;
 import lombok.*;
 import lombok.extern.log4j.Log4j2;
 
+import javax.validation.constraints.NotEmpty;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -13,6 +15,7 @@ import lombok.extern.log4j.Log4j2;
 //@RequiredArgsConstructor
 
 public class BeanDto {
+
     private Long id;
     private String beanName;
     private String beanData;

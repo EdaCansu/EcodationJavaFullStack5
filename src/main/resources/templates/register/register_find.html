@@ -45,15 +45,31 @@
 
 </head>
 
-<body class="container bg-dark text-white">
+<body class="container bg-dark">
 
     <!-- start codes -->
+
+    <h1>Register</h1>
+    <a th:href="@{/register/list}" class="btn btn-warning">Admin</a>
+    <div class="card text-center" style="width: 15rem">
+        <img class="card-img-top" src=""  />
+        <div class="card-body">
+            <h4  class="text-dark">Register Details</h4>
+            <p th:text="${register_find.id}" class="text-dark"></p>
+            <p th:text="${register_find.name}" class="text-dark"></p>
+            <p th:text="${register_find.surname}" class="text-dark"></p>
+            <p th:text="${register_find.password}" class="text-dark"></p>
+            <p th:text="${register_find.emailAddress}" class="text-dark"></p>
+        </div>
+        <span class="text-muted"  th:text="${register_find.createdDate}"></span>
+    </div>
+
 
 
 
     <!-- ends codes -->
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 </body>
